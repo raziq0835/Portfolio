@@ -50,8 +50,7 @@ const Footer = () => {
               href={item.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-xl hover:text-purple-500 transition-transform transform hover:scale-110"
-            >
+              className="text-xl hover:text-purple-500 transition-transform transform hover:scale-110">
               {item.icon}
             </a>
           ))}
