@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactTypingEffect from 'react-typing-effect';
+import { Typewriter } from 'react-simple-typewriter';
 import Tilt from 'react-parallax-tilt';
 import profileImage from '../../assets/profile2.png';
 
@@ -18,34 +18,27 @@ const About = () => {
           </h1>
           {/* Name */}
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4 leading-tight">
-            Tarun Kaushik
+            Raziq Pasha
           </h2>
           {/* Skills Heading with Typing Effect */}
           <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 text-[#8245ec] leading-tight">
             <span className="text-white">I am a </span>
-            <ReactTypingEffect
-              text={[
-                'Fullstack Developer',
-                'App Developer',
-                'UI/UX Designer',
-                'Coder',
-              ]}
-              speed={100}
-              eraseSpeed={50}
-              typingDelay={500}
-              eraseDelay={2000}
-              cursorRenderer={(cursor) => (
-                <span className="text-[#8245ec]">{cursor}</span>
-              )}
-            />
+            
+            <Typewriter
+  words={['Fullstack Developer', 'App Developer', 'UI/UX Designer', 'Coder']}
+  loop
+  cursor
+  cursorStyle="|"
+  typeSpeed={70}
+  deleteSpeed={50}
+  delaySpeed={1000}
+/>
           </h3>
           {/* About Me Paragraph */}
           <p className="text-base sm:text-lg md:text-lg text-gray-400 mb-10 mt-8 leading-relaxed">
-            I am a full-stack developer with over 2 years of experience in
-            building scalable web applications. Skilled in both front-end and
-            back-end development, I specialize in the MERN stack and other
-            modern technologies to create seamless user experiences and
-            efficient solutions.
+            Highly motivated 4th year Computer Science student with strong programming, Data Structures, and Algorithms skills, 
+            eager to contribute to innovative projects and learn from industry leaders. Seeking a software development position to 
+            apply my programming knowledge, problem-solving abilities, and passion for building impactful software solutions.
           </p>
           {/* Resume Button */}
           <a
